@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>node</title>
+    <style>
+        div {
+            border: red solid 1px;
+        }
+
+        #div1{
+            width: 200px;
+            height: 200px;
+        }
+
+        #div2{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <div id="div2">
+            div2
+        </div>
+        div1
+    </div>
+
+    <input type="button" id="btn_rmnode" value="remove childnode">
+    <input type="button" id="btn_addnode" value="add childnode">
+
+    <script>
+        var div1 = document.getElementById("div1");
+        var div2 = document.getElementById("div2");
+
+        var rmnode = document.getElementById("btn_rmnode");
+        rmnode.onclick = function () {
+            div1.removeChild(div2);
+        }
+
+        var addnode = document.getElementById("btn_addnode");
+        addnode.onclick = function () {
+            div1.appendChild(div2)
+        }
+
+    </script>
+
+</body>
+</html>

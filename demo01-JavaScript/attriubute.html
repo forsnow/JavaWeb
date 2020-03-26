@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>attribute</title>
+</head>
+<body>
+    <a>hello</a><br>
+    <input type="button" value="change the attribute" id="btn_set"><br>
+    <input type="button" value="remove the attribute" id="btn_rm">
+    <script>
+        var element_a = document.getElementsByTagName("a")[0];
+
+        var btn_set = document.getElementById("btn_set");
+        btn_set.onclick = function () {
+
+            element_a.setAttribute("href","https://www.baidu.com");
+        }
+
+        var btn_rm = document.getElementById("btn_rm");
+        btn_rm.onclick = function(){
+            element_a.removeAttribute("href")
+        }
+
+
+
+
+    </script>
+</body>
+</html>

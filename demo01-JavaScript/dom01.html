@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 id="title">hello</h1>
+    <input type="button" id="btn1" value="change title">
+
+    <div id="div1" >div1</div>
+    <div id="div2" >div2</div>
+    <div id="div3" >div3</div>
+    <div class="class1" >div4</div>
+    <div class="class1" >div5</div>
+    <div class="class2" >div6</div>
+    <input type="text" name="username">
+
+
+
+    <script>
+        var title = document.getElementById("title");
+        var btn = document.getElementById("btn1");
+        btn.onclick = function(){
+            title.innerHTML = "helloworld";
+        }
+
+        var tag = document.getElementsByTagName("div");
+        //alert(tag.length)
+
+        var class1 = document.getElementsByClassName("class1");
+        //alert(class1.length)
+
+        var table = document.createElement("table");
+        alert(table)
+
+
+    </script>
+</body>
+</html>

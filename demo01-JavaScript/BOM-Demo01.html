@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bom</title>
+    <script>
+        // alert("hello");
+        // var flag = confirm("你确定要退出吗");
+        // if (flag){
+        //     alert("welcome");
+        // }else {
+        //     alert("shou doule")
+        // }
+        //
+        // var result =  prompt("请输入用户名");
+        // alert(result);
+
+
+    </script>
+</head>
+
+<body>
+    <input type="button" id="btnOpen" value="打开窗口">
+    <input type="button" id="btnClose" value="关闭窗口">
+</body>
+
+<script>
+    var btnOpen = document.getElementById("btnOpen");
+    btnOpen.onclick = function () {
+        newwindow = open("http://www.baidu.com");
+    }
+
+    var btnClose = document.getElementById("btnClose")
+    btnClose.onclick = function () {
+        newwindow.close();
+    }
+
+</script>
+</html>
