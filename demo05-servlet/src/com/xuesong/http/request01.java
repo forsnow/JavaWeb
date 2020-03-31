@@ -15,9 +15,8 @@ import java.io.IOException;
 public class request01 extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("requestdemo01");
-        System.out.println(req);
-        System.out.println(req.getMethod());
-        System.out.println();
+        System.out.println("request01被访问了");
+        Object msg = req.getAttribute("msg");
+        System.out.println(msg);
     }
 }
