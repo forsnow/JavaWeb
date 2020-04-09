@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性操作</title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script>
+       $(function () {
+           var loc = $("#bj").attr("name");
+           alert(loc)
+           //$("#bj").attr("name","dabeijin");
+           //$("#bj").attr("description","map");
+       })
+
+    </script>
+</head>
+<body>
+<ul>
+    <li id="bj" name="beijing" xxx="yyy">北京</li>
+    <li id="tj" name="tianjin">天津</li>
+</ul>
+<input type="checkbox" id="hobby"/>
+</body>
+</html>

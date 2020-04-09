@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本选择器</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<style type="text/css">
+    div, span {
+        width: 180px;
+        height: 180px;
+        margin: 20px;
+        background: #9999CC;
+        border: #000 1px solid;
+        float: left;
+        font-size: 17px;
+        font-family: Roman;
+    }
+
+    div.mini {
+        width: 50px;
+        height: 50px;
+        background: #CC66FF;
+        border: #000 1px solid;
+        font-size: 12px;
+        font-family: Roman;
+    }
+
+    div.mini01 {
+        width: 50px;
+        height: 50px;
+        background: #CC66FF;
+        border: #000 1px solid;
+        font-size: 12px;
+        font-family: Roman;
+    }
+</style>
+
+<script type="text/javascript">
+    $(function () {
+        $("#b1").click(function () {
+            $("#one").css("background-color", "green");
+        })
+    })
+
+    $(function () {
+        $("#b2").click(function () {
+            $("div").css("background-color", "pink");
+        })
+    })
+
+    $(function () {
+        $("#b3").click(function () {
+            $(".mini").css("background-color", "orange");
+        })
+    })
+
+    $(function () {
+        $("#b4").click(function () {
+            $("#two,span").css("background-color", "blue");
+        })
+    })
+
+</script>
+
+<body>
+<input type="button" value="保存" class="mini" name="ok" class="mini">
+<input type="button" value="改变id为1的元素的背景为绿色" id="b1">
+<input type="button" value="改变元素名为<div>的所有元素背景色为粉红色" id="b2">
+<input type="button" value="改变class名为mini的所有元素背景色为橘黄色" id="b3">
+<input type="button" value="改变所有span元素和id为two的元素的背景色为蓝色" id="b4">
+
+<h1>Hello jQuery</h1>
+
+<div id="one">
+    id为one
+</div>
+
+<div id="two">
+    id为two class是mini
+    <div class="mini">class是mimi</div>
+</div>
+
+<div class="one">
+    class为one
+    <div class="mini">class是mimi</div>
+    <div class="mini">class是mimi</div>
+</div>
+
+<div class="one">
+    class为one
+    <div class="mini01">class是mimi</div>
+    <div class="mini01">class是mimi</div>
+</div>
+
+<span class="spanone">
+        class是spanone的span元素
+    </span>
+
+<span class="mini">
+        class是mini的span元素
+    </span><br>
+
+
+</body>
+</html>
