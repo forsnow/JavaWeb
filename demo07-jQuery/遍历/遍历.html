@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>遍历</title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+</head>
+<script>
+    /**
+    遍历
+    1. js的遍历方式
+    * for(初始化值;循环结束条件;步长)
+
+     2. jq的遍历方式
+          1. jq对象.each(callback)
+          2. $.each(object, [callback])
+          3. for..of:jquery 3.0 版本之后提供的方式
+    */
+
+    $(function () {
+        //方式一 js的遍历方式
+        var city = $("#city li");
+        for (var i = 0; i < city.length; i++) {
+            // if ("上海"==city[i].innerHTML){
+            //     break;
+            // }
+           // alert(i+":"+city[i].innerHTML);
+        }
+
+        //方式二 jQuery 遍历方式1
+        city.each(function () {
+            //alert($(this).html())
+
+        })
+
+        //方式三 jQuery 遍历方式2
+        $.each(city, function () {
+            alert($(this).html());
+        })
+
+        //方式四 jQuery 遍历方式3
+        // 四、方式4: for..of
+        for (li of city){
+            alert($(li).html());
+        }
+
+    })
+</script>
+<body>
+<ul id="city">
+    <li>北京</li>
+    <li>上海</li>
+    <li>天津</li>
+    <li>重庆</li>
+</ul>
+</body>
+</html>

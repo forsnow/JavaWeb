@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>action</title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+</head>
+<script>
+    function hideFn() {
+        // $("#showDiv").hide("slow","swing",function () {
+        //     alert("我被隐藏了");
+        // })
+
+        //默认方式
+        //$("#showDiv").hide(5000,"swing");
+
+        //滑动方式
+        //$("#showDiv").slideUp("slow");
+
+        //淡入淡出方式
+        $("#showDiv").fadeOut("slow");
+    }
+
+    function showFn() {
+        // $("#showDiv").show("slow","swing",function () {
+        //     alert("我被显示了")
+        //
+        // })
+
+        // 默认方式
+        // $("#showDiv").show(5000, "linear");
+
+        // $("#showDiv").slideDown("slow");
+
+        // 淡入淡出
+        $("#showDiv").fadeIn("slow");
+    }
+
+    function toggleFn() {
+        // $("#showDiv").toggle("slow", "linear");
+
+        $("#showDiv").fadeToggle("slow");
+
+    }
+</script>
+<body>
+<input type="button" value="点击按钮隐藏div" onclick="hideFn()">
+<input type="button" value="点击按钮显示div" onclick="showFn()">
+<input type="button" value="点击按钮切换div显示和隐藏" onclick="toggleFn()">
+
+<div id="showDiv" style="width:300px;height:300px;background:pink">
+    div显示和隐藏
+</div>
+</body>
+</html>

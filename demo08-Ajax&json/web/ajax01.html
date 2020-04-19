@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery-Ajax-01</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<script>
+    function fun() {
+        $.ajax({
+            url:"ajaxServlet01",  //转发路径
+            type: "Post", //请求方式
+            data:{"username":"xuesong","age":23},//请求方式
+            success:function (data) {
+                alert(data);
+            },//响应成功后的回调函数
+            error:function () {
+                alert("出错了")
+            },
+            dataType:"text"
+        })
+    }
+</script>
+<body>
+<input type="button" value="发送异步请求" onclick="fun();">
+</body>
+</html>
