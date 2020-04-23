@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/demo06-LoginTest/demo06-LoginTest.iml" filepath="$PROJECT_DIR$/demo06-LoginTest/demo06-LoginTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo07-jQuery/demo07-jQuery.iml" filepath="$PROJECT_DIR$/demo07-jQuery/demo07-jQuery.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo08-Ajax&amp;json/demo08-Ajax&amp;json.iml" filepath="$PROJECT_DIR$/demo08-Ajax&amp;json/demo08-Ajax&amp;json.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo09-redis/demo09-redis.iml" filepath="$PROJECT_DIR$/demo09-redis/demo09-redis.iml" />
     </modules>
   </component>
 </project>
