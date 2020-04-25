@@ -39,9 +39,4 @@ public class JedisPoolUtils {
     public static Jedis getJedis(){
         return jedisPool.getResource();
     }
-
-    //关闭方法
-    public static void Close(Jedis jedis){
-        jedis.close();
-    }
 }
